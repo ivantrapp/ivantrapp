@@ -1,0 +1,121 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    border: 2px solid #069;
+    box-sizing: border-box;
+    font-family: "Verdana";
+    height: 100%;
+    margin: 0 auto; /* Centraliza */
+    padding: 8px;
+    width: 100%; /* Define a largura do Corpo do Documento */
+}
+.jogoCompleto {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: black; */
+}
+.header{
+    position: absolute;
+    left: 0;
+    top:0;
+}
+fieldset {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    font-size: 10px;
+}
+.mesa-manilha{
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+.mesa-manilha img{
+    width: 70%;
+    border:black 1px dotted;
+}
+
+.mesa {
+    background-color: rgba(23, 78, 37, 0.987);
+    width: 50%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.mesa img{
+    width: 60%;
+}
+.mesa img:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+#mesa-jogador1{
+    top: 20%;
+}
+#mesa-jogador2{
+    right: 20%;
+}
+#mesa-jogador3{
+    bottom: 25%;
+}
+#mesa-jogador4{
+    left: 20%;
+}
+#mesa-jogador1,
+#mesa-jogador2,
+#mesa-jogador3,
+#mesa-jogador4,
+#jogador1,
+#jogador2,
+#jogador3,
+#jogador4{
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#jogador1 img,
+#jogador2 img,
+#jogador3 img,
+#jogador4 img{
+    height: 100%;
+    width: 100%;
+}
+#jogador1{
+    top: 4%;
+    height: 20%;
+    width: 25%;
+}
+#jogador2{
+    right: 15%;
+    transform: rotate(90deg);
+}
+#jogador3{
+    height: 20%;
+    width: 28%;
+    bottom: 4%;
+}
+#jogador4{
+    left: 15%;
+    transform: rotate(90deg);
+}
+
+
+
+
+

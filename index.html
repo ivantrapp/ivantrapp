@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Truco</title>
+</head>
+
+<body>
+    <div class="jogoCompleto">
+        <div class="header">
+            <div class="pontuacoes">
+                <h1>Jogo de Truco</h1>
+                <fieldset>
+                    <legend><b>Rodada</b></legend>
+                    <p><b>Nós: </b><span id="minhaRodada"> 0 </span></p>
+                    <p><b>Eles:</b> <span id="rodadaDeles"> 0 </span></p>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Pontos</b></legend>
+                    <p><b>Nós: </b><span id="minhaPontuacao"> 0 </span></p>
+                    <p><b>Eles:</b> <span id="pontuacaoDeles"> 0 </span></p>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Jogos</b></legend>
+                    <p><b>Nós: </b> <span id="meuJogo"> 0 </span></p>
+                    <p><b>Eles: </b> <span id="jogoDeles"> 0 </span></p>
+                </fieldset>
+            </div>
+        </div>
+        <div class="mesa-manilha">
+            <div class="manilha" id="manilha"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+        </div>
+        <div class="mesa" id="mesa">
+            <div id="mesa-jogador1">
+                <!-- <img src="./cartas-vermelhas/carta-fundo.png" alt=""> -->
+            </div>
+            <div id="mesa-jogador2">
+                <!-- <img src="./cartas-vermelhas/carta-fundo.png" alt=""> -->
+            </div>
+            <div id="mesa-jogador4">
+                <!-- <img src="./cartas-vermelhas/carta-fundo.png" alt=""> -->
+            </div>
+
+            <div id="mesa-jogador3">
+                <!-- <img src="./cartas-vermelhas/carta-fundo.png" alt=""> -->
+            </div>
+
+        </div>
+        <div id="jogador1" class="jogador">
+            <div id="carta1"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+            <div id="carta2"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+            <div id="carta3"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+        </div>
+        <div id="jogador2" class="jogador">
+            <div id="carta7"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+            <div id="carta8"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+            <div id="carta9"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+        </div>
+        <div id="jogador3" class="jogador">
+            <div id="carta10"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+            <div id="carta11"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+            <div id="carta12"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+        </div>
+        <div id="jogador4" class="jogador">
+            <div id="carta4"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+            <div id="carta5"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+            <div id="carta6"><img src="./cartas-vermelhas/carta-fundo.png" alt=""></div>
+        </div>
+    </div>
+    <script src="./script-gerador-cartas.js"></script>
+    <script src="./script-desenha-cartas.js"></script>
+    <script src="./script-desenha-pontos.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

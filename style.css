@@ -13,6 +13,7 @@ body {
     margin: 0 auto; /* Centraliza */
     padding: 8px;
     width: 100%; /* Define a largura do Corpo do Documento */
+    background-image: url(https://omunicipiojoinville.com/wp-content/uploads/2024/03/copia-de-imagem-destacada-11-1280x720.jpg);
 }
 .jogoCompleto {
     margin: 0;
@@ -47,13 +48,18 @@ fieldset {
 }
 
 .mesa {
-    background-color: rgba(23, 78, 37, 0.987);
+    /* background-color: rgba(23, 78, 37, 0.987); */
+    display: flex;
     width: 50%;
-    height: 60%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(https://http2.mlstatic.com/D_NQ_NP_827775-MLB27500770015_062018-O.webp);
+
 }
 .mesa img{
     width: 60%;
@@ -88,6 +94,16 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.cartas{
+    /* opacity: 0.5; */
+    transform: scale(1);
+    transition: 200ms;    
+}
+.cartas:hover{
+    /* opacity: 0.5; */
+    transform: scale(2);
+    transition: 200ms;    
 }
 #jogador1 img,
 #jogador2 img,
